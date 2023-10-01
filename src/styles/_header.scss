@@ -1,0 +1,33 @@
+.header {
+  padding: 40px 0;
+  background-color: #FFEBE7;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    &_image {
+      display: block;
+    }
+  }
+
+  &__nav {
+    &_list {
+      display: flex;
+      align-items: center;
+      &_item {
+        margin: 0 40px;
+        font-size: 22px;
+        &_link {
+          transition: all 0.2s ease-out;
+          &:hover {
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}

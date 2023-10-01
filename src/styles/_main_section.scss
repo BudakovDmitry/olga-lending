@@ -1,0 +1,33 @@
+.main_section {
+  height: 1118px;
+  background-image: url("img/main_bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  position: relative;
+  top: -1px;
+  overflow: hidden;
+
+  &__content {
+    &_text {
+      padding: 160px 0 0;
+      max-width: 50%;
+    }
+  }
+
+  &__title {
+    font-size: 54px;
+    font-weight: 700;
+    color: $brand-primary;
+    margin-bottom: 34px;
+  }
+
+  &__description {
+    color: #464646;
+    font-family: $font-primary;
+    font-size: 24px;
+    line-height: 160%;
+    margin-bottom: 52px;
+    max-width: 80%;
+  }
+}
