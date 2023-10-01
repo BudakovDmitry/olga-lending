@@ -1,0 +1,23 @@
+.accordion {
+  box-shadow: 0 10px 60px 0 rgba(38, 45, 118, 0.08);
+
+
+  &-button {
+    color: $brand-primary;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &:focus, &:focus-visible {
+      border: none;
+      box-shadow: none;
+    }
+    &:not(.collapsed) {
+      background-color: #FFEBE7;
+    }
+  }
+
+  &-body {
+    padding: 40px;
+  }
+}
