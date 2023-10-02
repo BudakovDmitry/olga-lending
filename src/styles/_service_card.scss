@@ -2,6 +2,11 @@
   overflow: hidden;
   position: relative;
   margin: 0 auto 30px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
 
   @include media-breakpoint-up(xl) {
     margin: 0;
