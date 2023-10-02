@@ -27,13 +27,14 @@
 
     @include media-breakpoint-up(xl) {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      gap: 100px 100px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 50px 50px;
       grid-template-areas:
-        ". ."
-        ". ."
-        ". .";
+        "first first second second third third"
+        ". four four five five .";
+      justify-content: center;
+      justify-items: center;
     }
   }
 }
