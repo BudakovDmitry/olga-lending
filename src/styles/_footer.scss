@@ -1,0 +1,57 @@
+.footer {
+  background-color: $brand-primary-dark;
+  padding: 60px 0;
+  &__content {
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    &_logo {
+      max-width: 210px;
+      padding: 0 20px;
+      border-right: 1px solid #626381;
+      &_image {
+        display: block;
+        max-width: 100%;
+      }
+    }
+
+    &_text {
+      color: #ffffff;
+      font-family: $font-main;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.88px;
+      padding: 0 20px;
+      max-width: 210px;
+    }
+  }
+
+  &__social {
+    &_block {
+      margin-bottom: 40px;
+      &_text {
+        color: #B2B3CF;
+        text-align: center;
+        font-family: $font-main;
+        font-size: 26px;
+        font-weight: 500;
+        letter-spacing: 1.04px;
+      }
+    }
+  }
+
+  &__copyright {
+    display: block;
+    color: #B2B3CF;
+    text-align: center;
+    font-family: $font-main;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.88px;
+  }
+}
