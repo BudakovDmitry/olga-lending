@@ -1,0 +1,43 @@
+.service_card {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 0;
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    color: #FFF;
+    text-align: center;
+    font-family: $font-main;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    margin: 0 auto;
+    background: none;
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    max-width: 250px;
+
+    &:hover {
+      background: #FFEBE7;
+      color: $brand-secondary;
+    }
+  }
+}

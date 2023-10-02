@@ -1,0 +1,39 @@
+.services {
+  margin-bottom: 100px;
+  &__content {
+
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    color: #696984;
+    text-align: center;
+    font-family: $font-main;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.48px;
+    max-width: 85%;
+    margin: 0 auto 80px;
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include media-breakpoint-up(xl) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 100px 100px;
+      grid-template-areas:
+        ". ."
+        ". ."
+        ". .";
+    }
+  }
+}
