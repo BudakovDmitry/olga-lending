@@ -9,11 +9,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const swiper = new Swiper('.swiper', {
-    loop: true,
     effect: "fade",
     modules: [Navigation],
-
-    // Navigation arrows
+    spaceBetween: 30,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

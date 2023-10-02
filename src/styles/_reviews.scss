@@ -1,3 +1,48 @@
 .reviews {
-  height: 800px;
+  margin-bottom: 80px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+    @include media-breakpoint-up(xl) {
+      flex: 0 0 45%;
+      max-width: 45%;
+      margin-bottom: 0;
+    }
+
+    &_title {
+      color: $brand-primary;
+      font-family: $font-secondary;
+      font-size: 60px;
+      font-weight: 700;
+      margin-bottom: 29px;
+    }
+
+    &_description {
+      color: $gray;
+      font-family: $font-main;
+      font-size: 26px;
+      line-height: 160%;
+      letter-spacing: 0.52px;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__slider {
+    flex: 0 0 100%;
+    max-width: 100%;
+    @include media-breakpoint-up(xl) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
 }

@@ -1,0 +1,82 @@
+.slide {
+  position: relative;
+  &__photo {
+    max-width: 300px;
+    border-radius: 20px 0 0 0;
+    overflow: hidden;
+    @include media-breakpoint-up(md) {
+      max-width: 450px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 350px;
+    }
+    &_image {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &__card {
+    max-width: 400px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 60px 0 rgba(41, 44, 124, 0.10);
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    padding: 20px;
+    border-left: 15px solid #FF7A59;
+
+    @include media-breakpoint-up(sm) {
+      bottom: 50px;
+      left: 70px;
+      max-width: 450px;
+    }
+
+    @include media-breakpoint-up(md) {
+      bottom: 20px;
+      left: 70px;
+      max-width: 600px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      bottom: 50px;
+      left: 70px;
+      max-width: 450px;
+    }
+
+    &_text {
+      color: #5F5F7E;
+      font-family: $font-secondary;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 180%;
+      letter-spacing: 0.44px;
+      padding-left: 20px;
+      border-left: 1px solid #BDBDD1;
+    }
+
+    &_info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &_name {
+      color: #5F5F7E;
+      font-family: $font-secondary;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 180%;
+    }
+
+    &_date {
+      color: #80819A;
+      font-family: $font-secondary;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 180%;
+      letter-spacing: 0.36px;
+    }
+  }
+}

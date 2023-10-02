@@ -1,4 +1,55 @@
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: 600px;
+
+  &-button-prev,
+  &-button-next {
+    width: 60px!important;
+    height: 60px!important;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 25px 0 rgba(0,0,0,0.1);
+    transition: all 0.2s ease-out;
+    top: 30%!important;
+    &:after {
+      display: none;
+    }
+
+    &_icon {
+      max-width: 15px;
+    }
+
+    &:hover {
+      background-color: #fcefed;
+    }
+
+    &.swiper-button-disabled {
+      display: none;
+    }
+  }
+  &-button-prev {
+    left: auto!important;
+    right: 80px!important;
+
+    @include media-breakpoint-up(sm) {
+      left: auto!important;
+      right: 120px!important;
+    }
+
+    @include media-breakpoint-up(lg) {
+      left: auto!important;
+      right: 180px!important;
+    }
+  }
+  &-button-next {
+    right: 10px!important;
+
+    @include media-breakpoint-up(sm) {
+      right: 50px!important;
+    }
+
+    @include media-breakpoint-up(lg) {
+      right: 100px!important;
+    }
+  }
 }
