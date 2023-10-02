@@ -45,4 +45,30 @@
       max-width: 50%;
     }
   }
+
+  &__link {
+    background: none;
+    border-top: 1px solid $brand-secondary;
+    border-left: 1px solid $brand-secondary;
+    border-bottom: 1px solid $brand-secondary;
+    color: $brand-secondary;
+    max-width: 400px;
+    font-size: 20px;
+    position: relative;
+    justify-content: start;
+    padding-left: 50px;
+    margin-top: 40px;
+    &:hover {
+       background: #FFEBE7;
+    }
+
+    &:after {
+      content: "";
+      background-image: url("img/arrow_right_in_cycle.svg");
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      right: 0;
+    }
+  }
 }
