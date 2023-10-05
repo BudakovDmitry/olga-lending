@@ -10,7 +10,7 @@
 
   &__content {
     &_text {
-      padding: 160px 0 0;
+      padding: 140px 0 0;
       max-width: 50%;
     }
   }
@@ -27,7 +27,11 @@
     font-family: $font-secondary;
     font-size: 24px;
     line-height: 160%;
-    margin-bottom: 52px;
     max-width: 80%;
+    margin-bottom: 0;
+
+    &:nth-child(4) {
+      margin-bottom: 52px;
+    }
   }
 }
