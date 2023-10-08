@@ -1,5 +1,5 @@
 .main_section {
-  height: 1118px;
+  height: 300px;
   background-image: url("img/main_bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -8,30 +8,66 @@
   top: -1px;
   overflow: hidden;
 
+  @include media-breakpoint-up(xl) {
+    height: 1118px;
+  }
+
   &__content {
     &_text {
-      padding: 140px 0 0;
-      max-width: 50%;
+      padding: 50px 0 0;
+      max-width: 100%;
+      @include media-breakpoint-up(xl) {
+        max-width: 50%;
+        padding: 300px 0 0;
+      }
     }
   }
 
   &__title {
-    font-size: 54px;
+    font-size: 24px;
     font-weight: 700;
     color: $brand-primary;
-    margin-bottom: 34px;
+    margin-bottom: 14px;
+    @include media-breakpoint-up(xl) {
+      font-size: 54px;
+      margin-bottom: 34px;
+    }
   }
 
   &__description {
     color: #464646;
     font-family: $font-secondary;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 160%;
     max-width: 80%;
     margin-bottom: 0;
+    @include media-breakpoint-up(xl) {
+      font-size: 24px;
+    }
 
     &:nth-child(4) {
-      margin-bottom: 52px;
+      margin-bottom: 22px;
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 52px;
+      }
     }
+  }
+
+  &__languages {
+    position: absolute;
+    right: -10px;
+    bottom: 40px;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-up(xl) {
+      right: 20px;
+      bottom: 200px;
+    }
+  }
+
+  &__language {
+    font-size: 20px;
+    margin: 0 10px;
   }
 }

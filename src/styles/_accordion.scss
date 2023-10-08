@@ -4,10 +4,15 @@
 
   &-button {
     color: $brand-primary;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 500;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include media-breakpoint-up(xl) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      font-size: 30px;
+    }
     &:focus, &:focus-visible {
       border: none;
       box-shadow: none;

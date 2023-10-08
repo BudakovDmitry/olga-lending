@@ -1,6 +1,9 @@
 .section_title {
   text-align: center;
-  font-size: 44px;
+  font-size: 26px;
   color: $brand-primary;
   font-weight: 700;
+  @include media-breakpoint-up(xl) {
+    font-size: 44px;
+  }
 }

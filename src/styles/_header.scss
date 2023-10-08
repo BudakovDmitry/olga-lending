@@ -1,6 +1,8 @@
 .header {
   padding: 40px 0;
   background-color: #FFEBE7;
+  position: relative;
+  z-index: 10;
 
   &__content {
     display: flex;
@@ -15,6 +17,10 @@
   }
 
   &__nav {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
     &_list {
       display: flex;
       align-items: center;
@@ -31,3 +37,5 @@
     }
   }
 }
+
+

@@ -1,5 +1,8 @@
 .questions {
-  margin: 0 0 100px;
+  margin-bottom: 40px;
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 100px;
+  }
 
   &__title {
     margin-bottom: 40px;

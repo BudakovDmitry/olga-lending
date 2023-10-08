@@ -44,17 +44,23 @@
     color: #FFF;
     text-align: center;
     font-family: $font-main;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      font-size: 32px;
+    }
   }
 
   &__button {
     margin: 0 auto;
     background: none;
     border: 1px solid #ffffff;
-    font-size: 18px;
+    font-size: 14px;
     max-width: 250px;
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+    }
 
     &:hover {
       background: #FFEBE7;

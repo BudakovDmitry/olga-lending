@@ -23,11 +23,14 @@
     &_text {
       color: #ffffff;
       font-family: $font-main;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 600;
       letter-spacing: 0.88px;
       padding: 0 20px;
       max-width: 210px;
+      @include media-breakpoint-up(xl) {
+        font-size: 22px;
+      }
     }
   }
 
@@ -38,9 +41,12 @@
         color: #B2B3CF;
         text-align: center;
         font-family: $font-main;
-        font-size: 26px;
+        font-size: 16px;
         font-weight: 500;
         letter-spacing: 1.04px;
+        @include media-breakpoint-up(xl) {
+          font-size: 26px;
+        }
       }
     }
   }
@@ -50,8 +56,11 @@
     color: #B2B3CF;
     text-align: center;
     font-family: $font-main;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.88px;
+    @include media-breakpoint-up(xl) {
+      font-size: 22px;
+    }
   }
 }

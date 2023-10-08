@@ -1,5 +1,8 @@
 .reviews {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 100px;
+  }
   &__content {
     display: flex;
     justify-content: space-between;
@@ -22,18 +25,24 @@
     &_title {
       color: $brand-primary;
       font-family: $font-secondary;
-      font-size: 60px;
+      font-size: 30px;
       font-weight: 700;
       margin-bottom: 29px;
+      @include media-breakpoint-up(xl) {
+        font-size: 60px;
+      }
     }
 
     &_description {
       color: $gray;
       font-family: $font-main;
-      font-size: 26px;
+      font-size: 16px;
       line-height: 160%;
       letter-spacing: 0.52px;
       margin-bottom: 26px;
+      @include media-breakpoint-up(xl) {
+        font-size: 26px;
+      }
     }
   }
 
@@ -65,10 +74,15 @@
     &:after {
       content: "";
       background-image: url("img/arrow_right_in_cycle.svg");
-      width: 80px;
-      height: 80px;
+      width: 40px;
+      height: 40px;
       position: absolute;
       right: 0;
+      background-size: contain;
+      @include media-breakpoint-up(xl) {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 }

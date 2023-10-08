@@ -37,14 +37,24 @@
                 </ul>
             </nav>
 
+            <div class="burger_menu">
+                <input type="checkbox" class="burger_menu__checkbox" id="navi-toggle">
 
-            <div class="container-link-language _anim-items _anim-no-hide">
-                <a class="language" href="#">en</a>
-                |
-                <a class="language" href="#">ru</a>
+                <label for="navi-toggle" class="burger_menu__button">
+                    <span class="burger_menu__icon">&nbsp;</span>
+                </label>
+
+                <div class="burger_menu__background">&nbsp;</div>
+
+                <nav class="burger_menu__nav">
+                    <ul class="burger_menu_list">
+                        <li class="burger_menu__item"><a href="#link__header" class="burger_menu__link">Home</a></li>
+                        <li class="burger_menu__item"><a href="#link__project" class="burger_menu__link">Project</a></li>
+                        <li class="burger_menu__item"><a href="#link__about" class="burger_menu__link">About</a></li>
+                        <li class="burger_menu__item"><a href="#link__contact" class="burger_menu__link">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-
-
         </div>
     </header>
     <main class="main">
@@ -64,6 +74,12 @@
                     </p>
                     <button class="button button_secondary">Join for free</button>
                 </div>
+            </div>
+
+            <div class="main_section__languages">
+                <a class="main_section__language language" href="#">EN</a>
+                |
+                <a class="main_section__language language" href="#">RU</a>
             </div>
         </section>
 
@@ -140,18 +156,18 @@
             </div>
 
             <!-- Modal -->
-<!--            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-<!--                <div class="modal-dialog modal-dialog-centered">-->
-<!--                    <div class="modal-content">-->
-<!--                        <div class="modal-header">-->
-<!--                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-<!--                        </div>-->
-<!--                        <div class="modal-body">-->
-<!--                            Test-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Test
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="reviews">
