@@ -14,7 +14,7 @@
 
   &__content {
     &_text {
-      padding: 50px 0 0;
+      padding: 30px 0 0;
       max-width: 100%;
       @include media-breakpoint-up(xl) {
         max-width: 50%;
@@ -54,15 +54,16 @@
   }
 
   &__languages {
-    position: absolute;
+    position: fixed;
     right: -10px;
     bottom: 40px;
     transform: rotate(90deg);
-    display: flex;
     align-items: center;
+    display: none;
     @include media-breakpoint-up(xl) {
+      display: flex;
       right: 20px;
-      bottom: 200px;
+      bottom: 100px;
     }
   }
 

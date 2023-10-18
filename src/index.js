@@ -3,9 +3,18 @@ import './index.scss';
 import "bootstrap";
 import swiper from './js/swiper';
 import { changeLanguage } from './js/translation'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+    startEvent: 'DOMContentLoaded',
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
+
     changeLanguage();
+
     //
     // const burgerMenu = document.querySelector('.js--burger_menu')
     //
