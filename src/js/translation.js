@@ -2,8 +2,6 @@ const selectLang = document.querySelectorAll(".language");
 const allLang = ["ua", "en", "ru"];
 const language = require('../translations.json')
 
-console.log(language)
-
 selectLang.forEach((e) =>
     e.addEventListener("click", function () {
         const langClick = e.innerHTML;
