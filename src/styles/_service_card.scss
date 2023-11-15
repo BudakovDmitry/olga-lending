@@ -13,8 +13,8 @@
   @include media-breakpoint-up(xl) {
     margin: 0;
 
-    width: 450px;
-    height: 360px;
+    max-width: 450px;
+    max-height: 360px;
   }
 
   &:hover {

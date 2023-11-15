@@ -15,6 +15,7 @@
 
   &__content {
     display: flex;
+    justify-content: space-between;
     //position: relative;
     &_text {
       padding: 30px 0 0;
@@ -28,18 +29,127 @@
     &_image {
       width: 100%;
       display: block;
-      border-radius: 20px;
       &_block {
-        max-width: 500px;
-        border-radius: 35px;
-        overflow: hidden;
-        background-color: #ffffff;
-        padding: 15px;
-        position: absolute;
-        bottom: -60px;
-        right: 12%;
 
-        box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+        //overflow: hidden;
+        //background-color: #ffffff;
+        //padding: 15px;
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        @include media-breakpoint-up(xl) {
+          max-width: 400px;
+        }
+        @include media-breakpoint-up(xxl) {
+          max-width: 500px;
+        }
+
+        //box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+      }
+      &_bg {
+        &_first {
+          position: absolute;
+          top: 160px;
+          left: -150px;
+          width: 300px;
+          height: 100px;
+          border-radius: 20px;
+          background: rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(10px);
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+
+          &_content {
+            display: flex;
+            align-items: center;
+
+            &_image {
+              margin-right: 20px;
+            }
+
+            &_text {
+              margin: 5px 0;
+              font-size: 14px;
+              font-weight: 700;
+              color: #545567;
+            }
+          }
+        }
+
+        &_second {
+          position: absolute;
+          top: 340px;
+          right: -150px;
+          border-radius: 20px;
+          background: rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(10px);
+          width: 300px;
+          height: 110px;
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+
+          &_icon {
+            position: absolute;
+            right: 25px;
+            top: 20px;
+          }
+
+          &_content {
+            display: flex;
+            align-items: center;
+
+            &_image {
+              margin-right: 20px;
+            }
+
+            &_text {
+              margin: 5px 0;
+              font-size: 16px;
+              font-weight: 700;
+              color: #545567;
+              &_block {
+
+              }
+            }
+          }
+
+        }
+
+        &_third {
+          position: absolute;
+          bottom: 100px;
+          left: -140px;
+          border-radius: 20px;
+          background: rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(10px);
+          width: 300px;
+          height: 157px;
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+
+          &_content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &_image {
+              margin-right: 20px;
+            }
+
+            &_text {
+              margin: 5px 0;
+              font-size: 16px;
+              font-weight: 700;
+              color: #545567;
+              &_block {
+
+              }
+            }
+          }
+        }
       }
     }
   }
