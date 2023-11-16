@@ -2,32 +2,70 @@
   position: relative;
   margin: 0 auto 100px;
   width: 100%;
-  height: 560px;
-  padding: 30px 20px;
+  height: 680px;
+  padding: 30px 10px;
   background:#ffffff;
   //box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-radius: 30px;
+  @include media-breakpoint-up(xl) {
+    padding: 30px 20px;
+  }
+
 }
 .about_courses__content .tab-header {
   float:left;
-  width:180px;
+  width:70px;
   height:100%;
   border-right:1px solid #ccc;
-  padding:50px 0px;
+  padding:50px 0;
+
+  @include media-breakpoint-up(xl) {
+    width:240px;
+  }
+
+  &__item {
+    &_text {
+      display: none;
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+    }
+
+    &_icon {
+      max-width: 50px;
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+      &_image {
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }
 }
 .about_courses__content .tab-header > div {
-  height:50px;
-  line-height:50px;
+  height:80px;
+  line-height:120%;
   font-size:16px;
   font-weight:600;
   color:#888;
   cursor:pointer;
-  padding-left:10px;
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  @include media-breakpoint-up(xl) {
+    padding: 0 10px;
+  }
 }
 .about_courses__content .tab-header > div:hover,
 .about_courses__content .tab-header > div.active {
-  color:#00acee;
+  color:$brand-primary;
 }
 .about_courses__content .tab-header div i {
   display:inline-block;
@@ -38,6 +76,41 @@
   position:relative;
   height:100%;
   overflow:hidden;
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: end;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 40px;
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    margin: 0 auto 30px;
+    line-height: 120%;
+    font-size: 16px;
+    text-align: end;
+    @include media-breakpoint-up(xl) {
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto 50px;
+      line-height: 140%;
+      font-size: 20px;
+    }
+  }
+
+  &__button {
+    margin: 0 0 0 auto;
+    max-height: 40px;
+    font-size: 16px;
+    @include media-breakpoint-up(xl) {
+      margin: 0 auto;
+    }
+  }
 }
 .about_courses__content .tab-content > div > i {
   display:inline-block;
@@ -54,9 +127,12 @@
 .about_courses__content .tab-content > div {
   position:absolute;
   text-align:center;
-  padding:40px 20px;
+  padding:20px 10px;
   top:-200%;
   transition:all 500ms ease-in-out;
+  @include media-breakpoint-up(xl) {
+    padding:40px 20px;
+  }
 }
 .about_courses__content .tab-content > div.active {
   top: 50%;
@@ -66,9 +142,13 @@
 .about_courses__content .tab-indicator {
   position:absolute;
   width:4px;
-  height:50px;
-  background:#00acee;
-  left:198px;
+  height:80px;
+  background:$brand-primary;
+  left: 78px;
   top:80px;
   transition:all 500ms ease-in-out;
+
+  @include media-breakpoint-up(xl) {
+    left: 258px;
+  }
 }
