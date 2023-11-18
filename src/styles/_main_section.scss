@@ -1,13 +1,8 @@
 .main_section {
-  height: 300px;
-  //background-image: url("img/main_bg.svg");
-  //background-size: cover;
-  //background-repeat: no-repeat;
+  height: 100%;
   background-color: #7c0dbc33;
   margin-bottom: 140px;
   position: relative;
-  //top: -1px;
-  //overflow: hidden;
 
   @include media-breakpoint-up(xl) {
     height: 750px;
@@ -16,7 +11,10 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    //position: relative;
+    flex-direction: column;
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+    }
     &_text {
       padding: 30px 0 0;
       max-width: 100%;
@@ -30,42 +28,47 @@
       width: 100%;
       display: block;
       &_block {
-
-        //overflow: hidden;
-        //background-color: #ffffff;
-        //padding: 15px;
-        position: absolute;
-        bottom: 0;
-        right: 10%;
+        position: relative;
         @include media-breakpoint-up(xl) {
+          position: absolute;
+          bottom: 0;
+          right: 10%;
           max-width: 400px;
         }
         @include media-breakpoint-up(xxl) {
           max-width: 500px;
         }
-
-        //box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
       }
       &_bg {
         &_first {
           position: absolute;
-          top: 160px;
-          left: -150px;
-          width: 300px;
-          height: 100px;
+          top: 100px;
+          left: 0;
+          width: 80px;
+          height: 80px;
           border-radius: 20px;
           background: rgba(255, 255, 255, 0.5);
           backdrop-filter: blur(10px);
           padding: 10px 20px;
           display: flex;
           align-items: center;
+          justify-content: center;
+          @include media-breakpoint-up(xl) {
+            width: 300px;
+            height: 100px;
+            left: -150px;
+            top: 160px;
+            justify-content: flex-start;
+          }
 
           &_content {
             display: flex;
             align-items: center;
 
             &_image {
-              margin-right: 20px;
+              @include media-breakpoint-up(xl) {
+                margin-right: 20px;
+              }
             }
 
             &_text {
@@ -73,27 +76,45 @@
               font-size: 14px;
               font-weight: 700;
               color: #545567;
+              display: none;
+              @include media-breakpoint-up(xl) {
+                display: block;
+              }
             }
           }
         }
 
         &_second {
           position: absolute;
-          top: 340px;
-          right: -150px;
+          top: 160px;
+          right: 0;
           border-radius: 20px;
           background: rgba(255, 255, 255, 0.5);
           backdrop-filter: blur(10px);
-          width: 300px;
-          height: 110px;
+          width: 80px;
+          height: 80px;
           padding: 10px 20px;
           display: flex;
           align-items: center;
+          justify-content: center;
+
+          @include media-breakpoint-up(xl) {
+            width: 300px;
+            height: 110px;
+            top: 340px;
+            right: -150px;
+            justify-content: flex-start;
+          }
+
 
           &_icon {
             position: absolute;
-            right: 25px;
-            top: 20px;
+            right: 10px;
+            top: 10px;
+            @include media-breakpoint-up(xl) {
+              right: 25px;
+              top: 20px;
+            }
           }
 
           &_content {
@@ -101,7 +122,9 @@
             align-items: center;
 
             &_image {
-              margin-right: 20px;
+              @include media-breakpoint-up(xl) {
+                margin-right: 20px;
+              }
             }
 
             &_text {
@@ -109,6 +132,10 @@
               font-size: 16px;
               font-weight: 700;
               color: #545567;
+              display: none;
+              @include media-breakpoint-up(xl) {
+                display: block;
+              }
               &_block {
 
               }
@@ -119,16 +146,24 @@
 
         &_third {
           position: absolute;
-          bottom: 100px;
-          left: -140px;
+          bottom: 50px;
+          left: 0;
           border-radius: 20px;
           background: rgba(255, 255, 255, 0.5);
           backdrop-filter: blur(10px);
-          width: 300px;
-          height: 157px;
+          width: 200px;
+          height: 100px;
           padding: 10px 20px;
           display: flex;
           align-items: center;
+          justify-content: center;
+          @include media-breakpoint-up(xl) {
+            width: 300px;
+            height: 157px;
+            bottom: 100px;
+            left: -140px;
+            justify-content: flex-start;
+          }
 
           &_content {
             display: flex;
@@ -136,7 +171,9 @@
             justify-content: center;
 
             &_image {
-              margin-right: 20px;
+              @include media-breakpoint-up(xl) {
+                margin-right: 20px;
+              }
             }
 
             &_text {
@@ -144,6 +181,10 @@
               font-size: 16px;
               font-weight: 700;
               color: #545567;
+              display: none;
+              @include media-breakpoint-up(xl) {
+                display: block;
+              }
               &_block {
 
               }
